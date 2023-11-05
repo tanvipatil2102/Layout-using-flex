@@ -1,5 +1,7 @@
 :root{
     --grey-shade-bg : #ededed;
+    --dark-color : #000;
+    --yellow-color : #ffb703;
 }
 
 *{
@@ -8,7 +10,89 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600;1,700&family=Roboto:wght@400;700&display=swap');
+
 body{
     background-color: var(--grey-shade-bg);
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* ########### CSS for header section starts here ########## */
+
+.header{
+    background-color: black;
+    color: white;
+    height: 400px;
+}
+
+.style-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.style-info h1{
+    text-transform: capitalize;
+}
+
+.style-info p{
+    color: var(--yellow-color);
+    font-style: italic;
+}
+
+.navbar{
+    background-color: var(--yellow-color);
+}
+
+.navbar ul{
+    text-align: center;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: var(--dark-color);
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    transition: all .4s ease-in-out;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a:active,
+.navbar ul li a:focus{
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+
+
+
+
+
+@media all and (min-width : 1180px) {
+    .navbar li{
+        display: inline-block;
+
+    }
+    .navbar ul{
+        display: flex;
+    }
+    .navbar li{
+        flex-grow: 1;
+    }
+}
