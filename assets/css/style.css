@@ -46,7 +46,7 @@ body{
 }
 
 .style-info h1{
-    text-transform: capitalize;
+    text-transform: uppercase;
 }
 
 .style-info p{
