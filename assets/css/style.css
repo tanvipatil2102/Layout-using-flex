@@ -1,9 +1,3 @@
-:root{
-    --grey-shade-bg : #ededed;
-    --dark-color : #000;
-    --yellow-color : #ffb703;
-}
-
 *{
     padding: 0;
     margin: 0;
@@ -80,6 +74,203 @@ body{
 }
 
 
+/* ############## CSS for post section ############## */
+
+.main-section{
+    flex-direction: column;
+}
+
+.main-content{
+    padding: 10px;
+}
+
+.sidebar-section{
+    padding: 10px;
+}
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.post{
+    margin-bottom: 0.6rem;
+}
+
+.post img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.post a{
+    color: var(--dark-color);
+    text-decoration: none;
+}
+
+.caption{
+    transform: translateY(-10px);
+}
+
+.caption h2{
+    font-size: medium;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--yellow-color);
+}
+
+.caption p{
+    background-color: var(--white-color);
+    padding: 20px;
+}
+
+/* ############## CSS for Watch Now section ############## */
+
+.watch-card{
+    background-color: var(--dark-color);
+    flex-direction: column;
+    margin-bottom: 0.6rem;
+}
+
+.watch-img img{
+    width: 100%;
+}
+.watch-caption{
+    color: var(--white-color);
+    padding: 30px;
+    font-weight: bold;
+}
+
+.watch-caption h3{
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 32px;
+}
+
+.watch-caption p > span{
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.watch-caption h3, .watch-caption p{
+    margin-bottom: 15px;
+}
+
+.watch-caption a{
+    color: var(--white-color);
+}
+
+
+/* ############## CSS for Download Now section ############## */
+
+.download-section{
+    background-color: var(--dark-color);
+}
+
+.download-section img{
+    width: 100%;
+}
+
+.guest-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.download-icon{
+    color: var(--white-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    align-self: center;
+}
+
+.guest-images{
+    background-color: var(--white-color);
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.guest-images span{
+    padding-top: 0;
+}
+
+.cast-img{
+    display: flex;
+    align-items: center;
+}
+
+.cast-img span{
+    margin-right: 15px;
+}
+
+.guest-images img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+
+.rating{
+    background-color: var(--yellow-color);
+    align-self: center;
+    padding: 40px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+/* ############## CSS for ovie gallary section ############## */
+
+.movie-posters{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.movie-posters img{
+    width: 100%;
+    object-fit: cover;
+    height: 150px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 768px) {
+    .posts .post{
+        width: 49%;
+    }
+    .posts{
+        justify-content: space-between;
+    }
+    .guest-info{
+        flex-direction: row;
+    }
+    .rating{
+        width: 25%;
+    }
+    .movie-posters{
+        flex-direction: row;
+    }
+    .movie-posters img{
+        width: 49%;
+    }
+
+}
 
 
 
@@ -95,4 +286,60 @@ body{
     .navbar li{
         flex-grow: 1;
     }
+    .main-section{
+        flex-direction: row;
+    }
+    .main-content{
+        flex-grow: 1;
+    }
+    .sidebar-section{
+        flex: 0 0 400px;
+    }
+    .posts .post:nth-child(1),
+    .posts .post:nth-child(2){
+        width: 49%;
+    }
+    .posts .post:nth-child(3),
+    .posts .post:nth-child(4),
+    .posts .post:nth-child(5){
+        width: 32%;
+    }
+    .posts .post:nth-child(6){
+        width: 100%;
+    }
+
+    .watch-card{
+        flex-direction: row;
+    }
+    .watch-img{
+        width: 400px;
+        flex: 0 0 400px;
+    }
+    .watch-img img{
+        height: 100%;
+    }
+    .watch-caption{
+        align-self: center;
+        padding: 30px;
+    }
+    .watch-card:nth-of-type(even) .watch-img{
+        order: 1;
+    }
+
+    .movie-posters img:nth-child(1) ,
+    .movie-posters img:nth-child(2) ,
+    .movie-posters img:nth-child(3){
+        width: 32%;
+    }
+    .movie-posters img:nth-child(4),
+    .movie-posters img:nth-child(5){
+        width: 49%;
+    }
+
+    .movie-posters img:nth-child(6),
+    .movie-posters img:nth-child(7),
+    .movie-posters img:nth-child(8){
+        width: 32%;
+    }
+
 }

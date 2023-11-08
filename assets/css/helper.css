@@ -1,0 +1,18 @@
+:root{
+    --grey-shade-bg : #ededed;
+    --dark-color : #000;
+    --yellow-color : #ffb703;
+    --white-color : #fff;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.section-heading{
+    color: var(--dark-color);
+    margin: 30px 0;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 36px;
+}

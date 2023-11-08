@@ -4,29 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout using flex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/helper.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
     
-    <div class="header">
-        <div class="container">
-            <div class="row">
-                <div class="style-info">
-                    <h1>the movie home</h1>
-                    <p>set back | relax | watch</p>
+    <div class="outer-wrap">
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="style-info">
+                        <h1>the movie home</h1>
+                        <p>set back | relax | watch</p>
+                    </div>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="javascript:;">watch</a></li>
+                            <li><a href="javascript:;">download</a></li>
+                            <li><a href="javascript:;">gallary</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="javascript:;">watch</a></li>
-                        <li><a href="javascript:;">download</a></li>
-                        <li><a href="javascript:;">gallary</a></li>
-                    </ul>
-                </nav>
             </div>
         </div>
+        <div class="main-section d-flex">
+            <main class="main-content">
+                <section class="posts">
+                    <article class="post">
+                        <a href="javascript:;">
+                            <figure class="img-section">
+                                <img src="./assets/images/img_1.jpg" alt="Fight club image" title="Fight club">
+                                <figcaption class="caption">
+                                    <h2>Fight club</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="javascript:;">
+                            <figure class="img-section">
+                                <img src="./assets/images/img_2.jpg" alt="Captain Jack Sparrow" title="Captain Jack Sparrow">
+                                <figcaption class="caption">
+                                    <h2>Captain Jack Sparrow</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="javascript:;">
+                            <figure class="img-section">
+                                <img src="./assets/images/img_3.jpg" alt="The Good The Bad And The Ugly" title="The Good The Bad And The Ugly">
+                                <figcaption class="caption">
+                                    <h2>The Good The Bad The Ugly</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="javascript:;">
+                            <figure class="img-section">
+                                <img src="./assets/images/img_4.jpg" alt="Sherlock Holmes" title="Sherlock Holmes">
+                                <figcaption class="caption">
+                                    <h2>Sherlock Holmes</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="javascript:;">
+                            <figure class="img-section">
+                                <img src="./assets/images/img_5.jpeg" alt="The Dark Knight Rises" title="The Dark Knight Rises">
+                                <figcaption class="caption">
+                                    <h2>The Dark Knight Rises</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                    <article class="post">
+                        <a href="javascript:;">
+                            <figure class="img-section">
+                                <img src="./assets/images/img_6.jpg" alt="Joker" title="Joker">
+                                <figcaption class="caption">
+                                    <h2>Joker</h2>
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                                </figcaption>
+                            </figure>
+                        </a>
+                    </article>
+                </section>
+                <section class="watchNow">
+                   <h2 class="section-heading">
+                    watch today
+                   </h2>
+                   <figure class="watch-card d-flex">
+                    <div class="watch-img">
+                        <img src="./assets/images/img_8.jpg" alt="Baby Driver" title="Baby Driver">
+                    </div>
+                    <figcaption class="watch-caption">
+                        <h3>baby driver</h3>
+                        <p>
+                            <span>2017</span>
+                            <span>124 min</span>
+                            <span>Action</span>
+                            <span>7.9</span>
+                            <span>8:30 pm</span>
+                        </p>
+                        <p class="movie-info">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis repellat eligendi
+                        </p>
+                        <a href="javascript:;">read more...</a>
+                    </figcaption>
+                   </figure>
+                   <figure class="watch-card d-flex">
+                    <div class="watch-img">
+                        <img src="./assets/images/img_9.jpg" alt="Fight Club" title="Fight Club">
+                    </div>
+                    <figcaption class="watch-caption">
+                        <h3>fight club</h3>
+                        <p>
+                            <span>2017</span>
+                            <span>124 min</span>
+                            <span>Action</span>
+                            <span>7.9</span>
+                            <span>8:30 pm</span>
+                        </p>
+                        <p class="movie-info">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis repellat eligendi
+                        </p>
+                        <a href="javascript:;">read more...</a>
+                    </figcaption>
+                   </figure>
+                </section>
+                <section class="downloadNow">
+                    <h4 class="section-heading">Download Now</h4>
+                    <div class="download-section">
+                        <img src="./assets/images/img_11.png" alt="">
+                        <div class="guest-info">
+                            <div class="download-icon">
+                                <span>Download</span>
+                                <i class="fa-solid fa-cloud-arrow-down"></i>
+                            </div>
+                            <div class="guest-images">
+                                <p><strong>Genre</strong>: adventure, action, horror, romance</p>
+                                <div class="cast-img">
+                                    <span><strong>Cast :</strong></span>
+                                <div>
+                                    <img src="./assets/images/img_11.jpg" alt="">
+                                    <img src="./assets/images/img_12.jpg" alt="">
+                                    <img src="./assets/images/img_13.jpg" alt="">
+                                    <img src="./assets/images/img_14.jpg" alt="">
+                                    <img src="./assets/images/img_15.jpg" alt="">
+                                </div>
+                                </div>
+
+                                
+                            </div>
+                            <div class="rating">
+                                <p>8</p>
+                                <p>(1400 rating)</p>
+                                <p>(6 seasons)</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="gallary">
+                    <h4 class="section-heading">movies gallary</h4>
+                    <div class="movie-posters">
+                        <img src="./assets/images/gallery_1.jpg" alt="Gallery one" title="Gallary one">
+                        <img src="./assets/images/gallery_2.jpg" alt="Gallery 2" title="Gallary 2">
+                        <img src="./assets/images/gallery_3.jpg" alt="Gallery 3" title="Gallary 3">
+                        <img src="./assets/images/gallery_4.jpg" alt="Gallery 4" title="Gallary 4">
+                        <img src="./assets/images/gallery_5.jpg" alt="Gallery 5" title="Gallary 5">
+                        <img src="./assets/images/gallery_6.jpg" alt="Gallery 6" title="Gallary 6">
+                        <img src="./assets/images/gallery_7.jpg" alt="Gallery 7" title="Gallary 7">
+                        <img src="./assets/images/gallery_8.jpg" alt="Gallery 8" title="Gallary 8">
+
+                    </div>
+                </section>
+            </main>
+            <aside class="sidebar-section">
+                side bar goes here
+
+                
+            </aside>
+        </div>
+        <div class="footer"></div>
     </div>
-    <div class="main-section"></div>
-    <div class="footer"></div>
 
     <script src="./assets/js/app.js"></script>
 </body>
